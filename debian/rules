@@ -57,7 +57,7 @@ install: build
 
 	# Add here commands to install the package into debian/python.
 	$(MAKE)
-	$(MAKE) prefix=$(CURDIR)/debian/python/usr install
+	$(MAKE) prefix=$(CURDIR)/debian/python2.6/usr install
 
 
 # Build architecture-independent files here.
