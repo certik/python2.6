@@ -1,4 +1,4 @@
-Source: python
+Source: python2.6
 Section: unknown
 Priority: extra
 Maintainer: Ondrej Certik <ondrej@certik.cz>
@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 7), autotools-dev
 Standards-Version: 3.7.3
 Homepage: <insert the upstream URL, if relevant>
 
-Package: python
+Package: python2.6
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: <insert up to 60 chars description>
