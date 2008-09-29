@@ -58,6 +58,11 @@ install: build
 	# Add here commands to install the package into debian/python.
 	$(MAKE)
 	$(MAKE) prefix=$(CURDIR)/debian/python2.6/usr install
+	rm $(CURDIR)/debian/python2.6/usr/bin/idle
+	rm $(CURDIR)/debian/python2.6/usr/bin/pydoc
+	rm $(CURDIR)/debian/python2.6/usr/bin/python
+	rm $(CURDIR)/debian/python2.6/usr/bin/python-config
+	rm $(CURDIR)/debian/python2.6/usr/bin/smtpd.py
 
 
 # Build architecture-independent files here.
