@@ -24,14 +24,7 @@ endif
 
 config.status: configure
 	dh_testdir
-	# Add here commands to configure the package.
-ifneq "$(wildcard /usr/share/misc/config.sub)" ""
-	cp -f /usr/share/misc/config.sub config.sub
-endif
-ifneq "$(wildcard /usr/share/misc/config.guess)" ""
-	cp -f /usr/share/misc/config.guess config.guess
-endif
-	./configure $(CROSS) --prefix=/usr --mandir=\$${prefix}/share/man --infodir=\$${prefix}/share/info CFLAGS="$(CFLAGS)" LDFLAGS="-Wl,-z,defs"
+	./configure $(CROSS) --prefix=/usr --mandir=\$${prefix}/share/man --infodir=\$${prefix}/share/info
 
 
 build: build-stamp
@@ -63,7 +56,8 @@ install: build
 	dh_installdirs
 
 	# Add here commands to install the package into debian/python.
-	$(MAKE) prefix=$(CURDIR)/debian/python/usr install
+	$(MAKE) $(MAKEFLAGS)
+	$(MAKE) $(MAKEFLAGS) prefix=$(CURDIR)/debian/python/usr install
 
 
 # Build architecture-independent files here.
