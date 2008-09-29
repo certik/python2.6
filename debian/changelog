@@ -1,0 +1,6 @@
+python (2.6rc2-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Ondrej Certik <ondrej@certik.cz>  Mon, 29 Sep 2008 11:10:23 +0200
+

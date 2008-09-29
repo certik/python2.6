@@ -1,0 +1,24 @@
+This package was debianized by Ondrej Certik <ondrej@certik.cz> on
+Mon, 29 Sep 2008 11:10:23 +0200.
+
+It was downloaded from <url://example.com>
+
+Upstream Author(s):
+
+    <put author's name and email here>
+    <likewise for another author>
+
+Copyright:
+
+    <Copyright (C) YYYY Name OfAuthor>
+    <likewise for another author>
+
+License:
+
+    <Put the license of the package here indented by 4 spaces>
+
+The Debian packaging is (C) 2008, Ondrej Certik <ondrej@certik.cz> and
+is licensed under the GPL, see `/usr/share/common-licenses/GPL'.
+
+# Please also look if there are files or directories which have a
+# different copyright/license attached and list them here.
